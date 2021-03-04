@@ -1,0 +1,9 @@
+name: cluster-api
+image:
+  registry: us.gcr.io
+  name: k8s-artifacts-prod/cluster-api/kubeadm-control-plane-controller
+  tag: v0.3.14
+
+project:
+  branch: "[[ .Branch ]]"
+  commit: "[[ .SHA ]]"

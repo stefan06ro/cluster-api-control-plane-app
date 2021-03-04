@@ -1,1 +1,1 @@
-# cluster-api-app
+# cluster-api-control-plane
