@@ -24,6 +24,7 @@ app.giantswarm.io/commit: {{ .Values.project.commit | quote }}
 app.kubernetes.io/managed-by: {{ .Release.Service | quote }}
 app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
 helm.sh/chart: {{ include "chart" . | quote }}
+cluster.x-k8s.io/provider: control-plane-kubeadm
 {{- end -}}
 
 {{/*
