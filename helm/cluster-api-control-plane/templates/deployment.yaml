@@ -34,7 +34,7 @@ spec:
         terminationMessagePolicy: File
       - args:
         - --metrics-addr=127.0.0.1:8080
-        - --watch-filter=0.0.0
+        - --watch-filter={{ include "resource.app.version" . }}
         command:
         - /manager
         image: "{{ .Values.image.registry }}/{{ .Values.image.name }}:{{ .Values.image.tag }}"
