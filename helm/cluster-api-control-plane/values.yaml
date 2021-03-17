@@ -1,8 +1,8 @@
 name: cluster-api
 image:
-  registry: us.gcr.io
-  name: k8s-artifacts-prod/cluster-api/kubeadm-control-plane-controller
-  tag: v0.3.14
+  registry: quay.io
+  name: giantswarm/kubeadm-control-plane-controller
+  tag: 1f96eea1165d6b356b3a1658eb4e3c7ddaec33b8
 
 project:
   branch: "[[ .Branch ]]"
