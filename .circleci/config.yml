@@ -14,3 +14,7 @@ workflows:
           app_catalog: "control-plane-test-catalog"
           app_catalog_test: "control-plane-test-catalog"
           chart: "cluster-api-control-plane"
+          # Trigger job on git tag.
+          filters:
+            tags:
+              only: /^v.*/
