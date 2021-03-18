@@ -26,3 +26,7 @@ room for such suffix.
 {{- define "resource.default.namespace" -}}
 giantswarm
 {{- end -}}
+
+{{- define "resource.app.version" -}}
+0.0.0
+{{- end -}}

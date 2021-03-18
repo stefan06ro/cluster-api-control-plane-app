@@ -16,6 +16,9 @@ webhooks:
   failurePolicy: Fail
   matchPolicy: Equivalent
   name: default.kubeadmcontrolplane.controlplane.cluster.x-k8s.io
+  objectSelector:
+    matchLabels:
+      cluster.x-k8s.io/watch-filter: {{ include "resource.app.version" . }}
   rules:
   - apiGroups:
     - controlplane.cluster.x-k8s.io
@@ -46,6 +49,9 @@ webhooks:
   failurePolicy: Fail
   matchPolicy: Equivalent
   name: validation.kubeadmcontrolplane.controlplane.cluster.x-k8s.io
+  objectSelector:
+    matchLabels:
+      cluster.x-k8s.io/watch-filter: {{ include "resource.app.version" . }}
   rules:
   - apiGroups:
     - controlplane.cluster.x-k8s.io
