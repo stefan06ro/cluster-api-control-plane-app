@@ -1,8 +1,7 @@
 name: cluster-api
 image:
-  registry: quay.io
   name: giantswarm/kubeadm-control-plane-controller
-  tag: 45c3a9e4e52738863d5290342c47b2e5cc7e8861
+  tag: 815685c3d03ac5ca7b6eed6c3a3e3aafd0b96ad9
 rbacproxy:
   image:
     name: giantswarm/kube-rbac-proxy
