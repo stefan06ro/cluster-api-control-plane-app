@@ -5,4 +5,4 @@ name: cluster-api-control-plane
 sources:
 - https://github.com/kubernetes-sigs/cluster-api
 version: [[ .Version ]]
-appVersion: [[ .AppVersion ]]
+appVersion: 0.3.14-gs1
