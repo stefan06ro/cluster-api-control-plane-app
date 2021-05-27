@@ -10,3 +10,5 @@ rbacproxy:
 project:
   branch: "[[ .Branch ]]"
   commit: "[[ .SHA ]]"
+
+watchfilter: capi
