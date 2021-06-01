@@ -14,3 +14,4 @@ spec:
     targetPort: webhook-server
   selector:
     {{- include "labels.selector" . | nindent 4 }}
+    control-plane: webhook

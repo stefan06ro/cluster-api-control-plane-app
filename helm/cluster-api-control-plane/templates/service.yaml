@@ -16,5 +16,6 @@ spec:
     targetPort: http
   selector:
     {{- include "labels.selector" . | nindent 4 }}
+    control-plane: controller-manager
   sessionAffinity: None
   type: ClusterIP
