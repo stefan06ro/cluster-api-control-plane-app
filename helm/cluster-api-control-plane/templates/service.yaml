@@ -10,10 +10,10 @@ metadata:
   namespace: {{ include "resource.default.namespace" . }}
 spec:
   ports:
-  - name: http
+  - name: metrics
     port: 8080
     protocol: TCP
-    targetPort: http
+    targetPort: metrics
   selector:
     {{- include "labels.selector" . | nindent 4 }}
     control-plane: controller-manager
