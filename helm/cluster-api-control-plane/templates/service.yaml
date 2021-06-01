@@ -3,8 +3,8 @@ kind: Service
 metadata:
   annotations:
     prometheus.io/scrape: "true"
-  labels:
     giantswarm.io/monitoring: "true"
+  labels:
     {{- include "labels.common" . | nindent 4 }}
   name: {{ include "resource.default.name" . }}-metrics-service
   namespace: {{ include "resource.default.namespace" . }}
