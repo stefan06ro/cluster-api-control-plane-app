@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - args:
-        - --metrics-addr=8080:8080
+        - --metrics-addr=0.0.0.0:8080
         - --watch-filter={{ .Values.watchfilter }}
         command:
         - /manager
