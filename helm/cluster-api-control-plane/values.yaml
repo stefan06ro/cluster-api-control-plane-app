@@ -2,10 +2,6 @@ name: cluster-api
 image:
   name: giantswarm/kubeadm-control-plane-controller
   tag: bb90d2037f840c82ee2fd61a181699b94bbbb53e
-rbacproxy:
-  image:
-    name: giantswarm/kube-rbac-proxy
-    tag: v0.4.1
 
 project:
   branch: "[[ .Branch ]]"
