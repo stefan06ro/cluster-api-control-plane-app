@@ -9,12 +9,14 @@ spec:
   replicas: 1
   selector:
     matchLabels:
+      control-plane: controller-manager
       {{- include "labels.selector" . | nindent 6 }}
   template:
     metadata:
       annotations:
         releaseRevision: {{ .Release.Revision | quote }}
       labels:
+        control-plane: controller-manager
         {{- include "labels.common" . | nindent 8 }}
     spec:
       containers:

@@ -11,10 +11,12 @@ spec:
   selector:
     matchLabels:
       {{- include "labels.selector" . | nindent 6 }}
+      control-plane: webhook
   template:
     metadata:
       labels:
         {{- include "labels.common" . | nindent 8 }}
+        control-plane: webhook
     spec:
       containers:
       - args:
