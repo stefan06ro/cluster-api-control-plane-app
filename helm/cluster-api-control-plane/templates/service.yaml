@@ -10,10 +10,10 @@ metadata:
   namespace: {{ include "resource.default.namespace" . }}
 spec:
   ports:
-  - name: https
-    port: 8443
+  - name: http
+    port: 8080
     protocol: TCP
-    targetPort: https
+    targetPort: http
   selector:
     {{- include "labels.selector" . | nindent 4 }}
   sessionAffinity: None
