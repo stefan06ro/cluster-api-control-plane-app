@@ -4,7 +4,7 @@ home: https://github.com/kubernetes-sigs/cluster-api
 name: cluster-api-control-plane
 sources:
 - https://github.com/kubernetes-sigs/cluster-api
-version: [[ .Version ]]
+version: "[[ .Version ]]"
 appVersion: [[ .AppVersion ]]
 annotations:
   application.giantswarm.io/owners: |
