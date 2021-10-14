@@ -14,3 +14,4 @@ annotations:
     - catalog: default
       provider: azure
       team: celestial
+  config.giantswarm.io/version: 1.x.x

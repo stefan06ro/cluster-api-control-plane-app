@@ -1,3 +1,4 @@
+{{ if eq (include "resource.app.unique" .) "false" }}
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -25,7 +26,7 @@ spec:
         - --watch-filter={{ .Values.watchfilter }}
         command:
         - /manager
-        image: "{{ .Values.Installation.V1.Registry.Domain }}/{{ .Values.image.name }}:{{ .Values.image.tag }}"
+        image: "{{ .Values.registry.domain }}/{{ .Values.image.name }}:{{ .Values.image.tag }}"
         imagePullPolicy: IfNotPresent
         name: manager
         ports:
@@ -42,3 +43,4 @@ spec:
       tolerations:
       - effect: NoSchedule
         key: node-role.kubernetes.io/master
+{{ end }}
