@@ -1,5 +1,5 @@
 {{ if eq (include "resource.app.unique" .) "false" }}
-apiVersion: admissionregistration.k8s.io/v1beta1
+apiVersion: admissionregistration.k8s.io/v1
 kind: ValidatingWebhookConfiguration
 metadata:
   annotations:
