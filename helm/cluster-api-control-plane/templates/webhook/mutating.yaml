@@ -11,7 +11,7 @@ webhooks:
 - clientConfig:
     caBundle: Cg==
     service:
-      name: {{ include "resource.default.name" . }}-webhook
+      name: {{ include "resource.webhook.name" . }}
       namespace: {{ include "resource.default.namespace" . }}
       path: /mutate-controlplane-cluster-x-k8s-io-v1alpha3-kubeadmcontrolplane
   failurePolicy: Fail

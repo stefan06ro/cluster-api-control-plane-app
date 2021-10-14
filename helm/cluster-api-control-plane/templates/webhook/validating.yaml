@@ -6,12 +6,12 @@ metadata:
     cert-manager.io/inject-ca-from: {{ include "resource.default.namespace" . }}/{{ include "resource.default.name" . }}-cert
   labels:
     {{- include "labels.common" . | nindent 4 }}
-  name: {{ include "resource.default.name" . }}-webhook
+  name: {{ include "resource.webhook.name" . }}
 webhooks:
 - clientConfig:
     caBundle: Cg==
     service:
-      name: {{ include "resource.default.name" . }}-webhook
+      name: {{ include "resource.webhook.name" . }}
       namespace: {{ include "resource.default.namespace" . }}
       path: /validate-controlplane-cluster-x-k8s-io-v1alpha3-kubeadmcontrolplane
   failurePolicy: Fail
