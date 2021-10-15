@@ -37,6 +37,8 @@ spec:
         terminationMessagePolicy: File
       dnsPolicy: ClusterFirst
       serviceAccountName: {{ include "resource.default.name" . }}
+      securityContext:
+        {{- toYaml .Values.podSecurityContext | nindent 8 }}
       restartPolicy: Always
       schedulerName: default-scheduler
       terminationGracePeriodSeconds: 10

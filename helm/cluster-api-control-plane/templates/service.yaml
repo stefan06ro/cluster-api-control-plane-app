@@ -12,8 +12,7 @@ metadata:
 spec:
   ports:
   - name: metrics
-    port: 8080
-    protocol: TCP
+    port: {{ .Values.ports.metrics }}
     targetPort: metrics
   selector:
     {{- include "labels.selector" . | nindent 4 }}
