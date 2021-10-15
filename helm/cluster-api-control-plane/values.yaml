@@ -11,3 +11,10 @@ watchfilter: capi
 
 registry:
   domain: docker.io
+
+ports:
+  metrics: 8080
+
+podSecurityContext:
+  runAsNonRoot: true
+  runAsUser: 1000

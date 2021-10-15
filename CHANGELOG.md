@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Adjust settings for CRD webhook.
+
 ## [0.3.22-gs4] - 2021-10-15
 
 ### Changed
