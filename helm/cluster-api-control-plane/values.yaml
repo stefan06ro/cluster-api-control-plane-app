@@ -8,3 +8,6 @@ project:
   commit: "[[ .SHA ]]"
 
 watchfilter: capi
+
+registry:
+  domain: docker.io
