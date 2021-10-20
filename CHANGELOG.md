@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.22-gs7] - 2021-10-20
+
 ### Fixed
 
 - Change webhooks to use `v1beta1` of `admissionReviewVersions`
@@ -58,7 +60,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.0.1] - 2021-03-18
 
-[Unreleased]: https://github.com/giantswarm/cluster-api-control-plane-app/compare/v0.3.22-gs6...HEAD
+[Unreleased]: https://github.com/giantswarm/cluster-api-control-plane-app/compare/v0.3.22-gs7...HEAD
+[0.3.22-gs7]: https://github.com/giantswarm/cluster-api-control-plane-app/compare/v0.3.22-gs6...v0.3.22-gs7
 [0.3.22-gs6]: https://github.com/giantswarm/cluster-api-control-plane-app/compare/v0.3.22-gs5...v0.3.22-gs6
 [0.3.22-gs5]: https://github.com/giantswarm/cluster-api-control-plane-app/compare/v0.3.22-gs4...v0.3.22-gs5
 [0.3.22-gs4]: https://github.com/giantswarm/cluster-api-control-plane-app/compare/v0.3.22-gs3...v0.3.22-gs4
